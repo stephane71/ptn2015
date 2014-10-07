@@ -1,0 +1,18 @@
+<div>
+	<table class='table table-bordered table-hover'>
+		<tr>
+			<th></th>
+			<th>Startup</th>
+			<th>Adresse</th>
+		</tr>
+		<tr>
+		{{#each}}
+			<tr>
+				<td><img {{bind-attr src=img}}></td>
+				<td><a {{bind-attr href=url}}>{{name}}</a></td>
+				<td>{{description}}</td>
+			</tr>
+		{{/each}}
+		</tr>
+	</table>
+</div>
