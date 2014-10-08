@@ -6,11 +6,11 @@
 			<th>Adresse</th>
 		</tr>
 		<tr>
-		{{#each}}
+		{{#each item in model.startup}}
 			<tr>
-				<td><img {{bind-attr src=img}}></td>
-				<td><a {{bind-attr href=url}}>{{name}}</a></td>
-				<td>{{description}}</td>
+				<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
+				<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
+				<td>{{item.description}}</td>
 			</tr>
 		{{/each}}
 		</tr>
