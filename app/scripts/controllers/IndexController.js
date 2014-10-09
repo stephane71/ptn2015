@@ -1,7 +1,6 @@
 Ptn2015.IndexController = Ember.Controller.extend({
-	
 	init: function(){
-		console.log('init index controller');
+		//this.set('model')
 	},
 
 	list: function(){
@@ -13,11 +12,36 @@ Ptn2015.IndexController = Ember.Controller.extend({
 			});
 		});
 		return l;
-	}.property('model'),
+	}.property(),
+
+	onStartupSelection: function(selection){
+			startup = this.getStartup(selection);
+		this.set('selection', startup);
+	},
 
 	getStartup: function(name){
-		var s = this.get('model.startup').filterBy('name', name);
-		return s[0];
+		return this.get('model.startup').filterBy('name', name);
+	},
+
+	getCategoryNumber: function(c){
+		var id;
+		this.get('model.category').forEach(function(e, i){
+			if(e === c){
+				id = i;
+			}
+		});
+		return id;
+	},
+
+	actions: {
+		setFilter: function(filter){
+			if(filter === 'all'){
+				this.set('selection', undefined);
+			}
+			var c = this.getCategoryNumber(filter);
+			var list = this.get('model.startup').filterBy('category', c);
+			this.set('selection', list);
+		}
 	}
 
 });

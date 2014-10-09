@@ -1,4 +1,17 @@
-<div>
+<div class="col-md-3">
+	<div class="sidebar-nav">
+		<div class="list-group">
+			<a href="#" {{action "setFilter" "all"}} class="list-group-item">Toutes les Startup</a>
+		</div>
+		<h4>Catégories</h4>
+		<div class="list-group">
+			{{#each item in model.category}}
+			<a href="#" {{action "setFilter" item}} class="list-group-item">{{item}}</a>
+			{{/each}}
+		</div>
+	</div>
+</div>
+<div class="col-md-9">
 	<input  id="startup-search" width="100%" type="text" 
 			class="form-control" style="margin-bottom:20px"
 			placeholder="Sélectionnez une startup">
@@ -9,12 +22,14 @@
 			<th>Startup</th>
 			<th>Description</th>
 		</tr>
-		{{#if view.selection}}
-		<tr>
-			<td><img width="70px" height="70px" {{bind-attr src=view.selection.img}}></td>
-			<td><a {{bind-attr href=view.selection.url}}>{{view.selection.name}}</a></td>
-			<td>{{view.selection.description}}</td>
-		</tr>
+		{{#if selection}}
+			{{#each item in selection}}
+			<tr>
+				<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
+				<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
+				<td>{{item.description}}</td>
+			</tr>
+			{{/each}}
 		{{else}}
 		{{#each item in model.startup}}
 		<tr>
