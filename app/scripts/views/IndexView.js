@@ -12,6 +12,14 @@ Ptn2015.IndexView = Ember.View.extend({
 		$('#startup-search').select2({
 			data: list
 		});
-	}.observes('controller.list')
+	}.observes('controller.list'),
 
+	click: function(e){
+		if(e.target.id === 'all'){
+			$("#category_menu a").each(function(i, e){
+				$(e).removeClass('active');
+			});
+			$(e.target).addClass('active');
+		}
+	}
 });

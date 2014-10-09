@@ -15,7 +15,7 @@ Ptn2015.IndexController = Ember.Controller.extend({
 	}.property(),
 
 	onStartupSelection: function(selection){
-			startup = this.getStartup(selection);
+		var	startup = this.getStartup(selection);
 		this.set('selection', startup);
 	},
 

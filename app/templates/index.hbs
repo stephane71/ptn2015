@@ -1,14 +1,10 @@
 <div class="col-md-3">
 	<div class="sidebar-nav">
 		<div class="list-group">
-			<a href="#" {{action "setFilter" "all"}} class="list-group-item">Toutes les Startup</a>
+			<a id="all" href="#" {{action "setFilter" "all"}} class="list-group-item">Toutes les Startup</a>
 		</div>
 		<h4>Catégories</h4>
-		<div class="list-group">
-			{{#each item in model.category}}
-			<a href="#" {{action "setFilter" item}} class="list-group-item">{{item}}</a>
-			{{/each}}
-		</div>
+		{{view Ptn2015.CategoryMenuView}}
 	</div>
 </div>
 <div class="col-md-9">
