@@ -13,6 +13,11 @@ Ptn2015.IndexController = Ember.Controller.extend({
 			});
 		});
 		return l;
-	}.property('model')
+	}.property('model'),
+
+	getStartup: function(name){
+		var s = this.get('model.startup').filterBy('name', name);
+		return s[0];
+	}
 
 });

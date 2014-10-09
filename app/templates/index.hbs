@@ -1,19 +1,28 @@
 <div>
-	<input  id="startup-search" width="100%" type="text" class="form-control" placeholder="">
+	<input  id="startup-search" width="100%" type="text" 
+			class="form-control" style="margin-bottom:20px"
+			placeholder="Sélectionnez une startup">
+
 	<table class='table table-bordered table-hover'>
 		<tr>
 			<th></th>
 			<th>Startup</th>
-			<th>Adresse</th>
+			<th>Description</th>
 		</tr>
+		{{#if view.selection}}
 		<tr>
-		{{#each item in model.startup}}
-			<tr>
-				<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
-				<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
-				<td>{{item.description}}</td>
-			</tr>
-		{{/each}}
+			<td><img width="70px" height="70px" {{bind-attr src=view.selection.img}}></td>
+			<td><a {{bind-attr href=view.selection.url}}>{{view.selection.name}}</a></td>
+			<td>{{view.selection.description}}</td>
 		</tr>
+		{{else}}
+		{{#each item in model.startup}}
+		<tr>
+			<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
+			<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
+			<td>{{item.description}}</td>
+		</tr>
+		{{/each}}
+		{{/if}}
 	</table>
 </div>
