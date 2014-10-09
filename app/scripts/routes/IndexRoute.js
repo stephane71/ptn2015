@@ -5,7 +5,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 
     model: function () {
         return {
-			category: ['Autopartage', 'Appartement'],
+			category: ['Autopartage', 'Appartement', 'Tous type de biens','Place de parking','Service VTC','Salle à manger', 'Bureaux'],
 			startup: [{
 				id: 0,
 				name: 'Livementor',
@@ -20,7 +20,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://fr.zilok.com',
 				img: 'http://altaide.typepad.com/.a/6a00d83451e4be69e20120a6376df3970c-120wi',
 				description: 'Location particulier et pro. Tout louer.',
-				category: 1
+				category: 2
 			},
 			{
 				id: 2,
@@ -28,7 +28,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.parkadom.com',
 				img: 'http://www.parkadom.com/images/frontend/logo.jpg',
 				description: 'Partager votre parking\nParkadom est la première communauté de partage de parking entre particuliers en France.',
-				category: 1
+				category: 3
 			},
 			{
 				id: 3,
@@ -36,7 +36,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.monsieurparking.com',
 				img: 'http://www.monsieurparking.com/images/monsieur_parking_logo.png',
 				description: 'Le spécialiste du parking',
-				category: 1
+				category: 3
 			},
 			{
 				id: 4,
@@ -44,7 +44,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://zenpark.com',
 				img: 'https://lh5.googleusercontent.com/-N0Zbc1K8QJg/AAAAAAAAAAI/AAAAAAAAACE/dess0lTVa3Y/photo.jpg?sz=48',
 				description: 'Zenpark est un réseau de parkings partagés pour se garer sereinement en ville',
-				category: 1
+				category: 3
 			},
 			{
 				id: 5,
@@ -52,7 +52,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'https://sharette.fr',
 				img: 'https://sharette.fr/img/logo/Typo-555a9dc0.png',
 				description: '"Nous créons un nouveau transport en commun."\nSharette intègre le covoiturage dans le réseau de transport en commun : nous calculons des itinéraires combinant le trajet des conducteurs avec l’offre de RER, Métro, Transilien, Bus et Tramway. Pourquoi faire ? Pour réduire le temps de trajet des passagers et les frais des conducteurs. Le tout de manière conviviale !',
-				category: 1
+				category: 0
 			},
 			{
 				id: 6,
@@ -60,7 +60,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.covoiturage.fr',
 				img: 'https://lh4.googleusercontent.com/-REg2RtdDNzM/AAAAAAAAAAI/AAAAAAAAAmQ/zVn2ui5QM-A/photo.jpg?sz=48',
 				description: 'Voyagez moins cher en toute confiance.',
-				category: 1
+				category: 0
 			},
 			{
 				id: 7,
@@ -68,7 +68,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.ouicar.fr',
 				img: 'https://lh4.googleusercontent.com/-YHhJsKGftzM/AAAAAAAAAAI/AAAAAAAAACw/e_YtgR_ZvMw/photo.jpg?sz=48',
 				description: 'Location de voiture entre particuliers',
-				category: 1
+				category: 0
 			},
 			{
 				id: 8,
@@ -76,7 +76,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.buzzcar.com/fr/',
 				img: 'https://lh4.googleusercontent.com/-QH1gpMompNY/AAAAAAAAAAI/AAAAAAAABSc/ToThWWjO914/photo.jpg?sz=48',
 				description: "Location de voiture entre particuliers à l'heure ou à la journée",
-				category: 1
+				category: 0
 			},
 			{
 				id: 9,
@@ -84,15 +84,19 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.livop.fr/',
 				img: 'http://www.livop.fr/images/livop/LogoLivop2013.jpg',
 				description: "Louer une voiture de particulier dans votre ville\nLouer une voiture de particulier à partir de 3 € /h et 15 € /j ACCÈS VIA SMARTPHONE - PAS D'ABONNEMENT - INSCRIPTION GRATUITE",
-				category: 1
+				category: 0
 			},
 			{
 				id: 10,
 				name: 'Koolicar',
 				url: 'https://www.koolicar.com',
 				img: 'https://www.koolicar.com/assets/logo_koolicar-autopartage-7b8ad0e0ce9532ff0d4a7aa23132e512.png',
-				description: 'Location de voitures entre particuliers sans échange de clés, de 1 heure à plusieurs jours',
-				category: 1
+				description: 'Location de voitures entre particuliers sans échange de clés, de 1 heure à plusieurs jours\n ',
+				category: 0,
+				ref : [{
+					url:'http://frenchweb.fr/carsharing-koolicar-leve-26-millions-deuros-aupres-de-la-maif/163804http://frenchweb.fr/carsharing-koolicar-leve-26-millions-deuros-aupres-de-la-maif/163804',
+					text:'Koolicar lève 2,6 millions d’euros auprès de la MAIF'	
+				}]
 			},
 			{
 				id: 11,
@@ -100,15 +104,15 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.zipcar.fr',
 				img: 'http://dru-cdn.zipcar.com/sites/default/files/zipcar_header_logo_notag.svg',
 				description: "Des véhicules, à l'heure ou à la journée, disponibles dès que vous l'êtes",
-				category: 1
+				category: 0
 			},
 			{
 				id: 12,
 				name: 'Carsonar',
 				url: 'http://www.carsonar.com',
 				img: 'http://shareannuaire.com/wp-content/uploads/2014/07/carsonar-230x230.png',
-				description: "26 000 véhicules de professionnels et particuliers 26 opérateurs d'autopartage",
-				category: 1
+				description: "26 000 véhicules de professionnels et particuliers 26 opérateurs d'autopartage\nComparateur de location de voiture entre particuliers",
+				category: 0
 			},
 			{
 				id: 13,
@@ -116,7 +120,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'https://www.drivy.com/',
 				img: 'https://lh5.googleusercontent.com/-aHkAvwBcDs0/AAAAAAAAAAI/AAAAAAAAAS8/Fb_j2Ywac18/photo.jpg?sz=48',
 				description: 'Service de location de voiture entre particulier',
-				category: 1
+				category: 0
 			},
 			{
 				id: 14,
@@ -124,7 +128,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.carnomise.com',
 				img: 'http://www.carnomise.com/images/logo/logo-200x200.png',
 				description: "Location de voiture entre voyageurs. Carnomise permet aux voyageurs partant de profiter d’un parking gratuit à l’aéroport en louant leur voiture aux voyageurs arrivants qui ont besoin d’un véhicule pour un ou plusieurs jours. Le propriétaire de la voiture profite du parking gratuit à l’aéroport et gagne de l'argent (50% des revenus) grâce à la location de sa voiture tandis que le locataire loue nettement moins cher.",
-				category: 1
+				category: 0
 			},
 			{
 				id: 15,
@@ -132,7 +136,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'https://www.tripndrive.com/fr',
 				img: 'https://lh6.googleusercontent.com/-HKHX2Mq33Yg/AAAAAAAAAAI/AAAAAAAAAQg/UQHx8THEB3Q/photo.jpg?sz=48',
 				description: "Autopartage pour les voyageurs à l'aéroport et à la gare",
-				category: 1
+				category: 0
 			},
 			{
 				id: 16,
@@ -140,7 +144,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.snapcar.com',
 				img: 'http://www.snapcar.com/i/logo-lg.png',
 				description: "SnapCar vient instantanément vous chercher là où vous vous trouvez !",
-				category: 1
+				category: 4
 			},
 			{
 	
@@ -149,7 +153,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'http://www.chauffeur-prive.com',
 				img: 'http://www.chauffeur-prive.com/images/logocp.png',
 				description: "Laissez-vous transporter avec classe & simplicité",
-				category: 1
+				category: 4
 			},
 			{
 				id: 18,
@@ -181,7 +185,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'data:image/jpeg;base64,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',
 				img: 'https://cookening-assets-eu.s3.amazonaws.com/assets/cookening-bbc8f2ec6ffb7c8fb538b94de26f62ef.svg',
 				description: "Des repas à la maison pour des rencontres improbables",
-				category: 1
+				category: 5
 			},
 			{
 				id: 22,
@@ -464,21 +468,22 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 			},
 			{
 				id: 55,
-				name: '',
-				url: '',
-				img: '',
-				description: "",
-				category: 1
+				name: 'SharyShary',
+				url: 'http://www.sharyshary.fr/',
+				img: 'http://91.68.209.12/bmi/www.sharyshary.fr/assets/image/logo.png',
+				description: "Sharyshary est le premier réseau social dédié au partage d’objets et de conseils entre amis.",
+				category: 2
 			},
 			{
-				name: '',
-				url: '',
-				img: '',
-				description: "",
-				category: 1
+				id: 56
+				name: 'Bird Office',
+				url: 'https://www.bird-office.com/',
+				img: 'https://www.bird-office.com/img/logo-bird-office.png',
+				description: "Réservez votre salle de réunion, formation,séminaire, conférence...",
+				category: 6
 			},
 			{
-				name: '',
+				name: '',-
 				url: '',
 				img: '',
 				description: "",
