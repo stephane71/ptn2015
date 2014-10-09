@@ -193,7 +193,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				url: 'https://www.bureauxapartager.com',
 				img: 'https://lh6.googleusercontent.com/-EhRn_gQS_QU/AAAAAAAAAAI/AAAAAAAAAEM/6MvqU-nqe_E/photo.jpg?sz=48',
 				description: "LOCATION DE BUREAUX, SALLES DE RÉUNION ET COWORKING",
-				category: 1
+				category: 6
 			},
 			{
 				id: 23,
@@ -475,7 +475,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				category: 2
 			},
 			{
-				id: 56
+				id: 56,
 				name: 'Bird Office',
 				url: 'https://www.bird-office.com/',
 				img: 'https://www.bird-office.com/img/logo-bird-office.png',
@@ -483,7 +483,7 @@ Ptn2015.IndexRoute = Ember.Route.extend({
 				category: 6
 			},
 			{
-				name: '',-
+				name: '',
 				url: '',
 				img: '',
 				description: "",
