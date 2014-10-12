@@ -136,7 +136,11 @@ module.exports = function (grunt) {
 			app: {
 				ignorePath: /^\/|\.\.\//,
 				src: ['<%= yeoman.app %>/index.html'],
-				exclude: ['bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js']
+				exclude: [
+					'bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js',
+					'bower_components/ember/ember.js',
+					'bower_components/ember-data/ember-data.js'
+				]
 			}
 		},
 
@@ -185,7 +189,7 @@ module.exports = function (grunt) {
             }
         },
         useminPrepare: {
-            html: '.tmp/index.html',
+			html: '.tmp/index.html',
             options: {
                 dest: '<%= yeoman.dist %>'
             }
@@ -382,7 +386,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
-        'replace:dist',
+		'wiredep',
+        'replace:dist', // replace @@ember et @@ember-data
         'useminPrepare',
         'concurrent:dist',
         'neuter:app',
