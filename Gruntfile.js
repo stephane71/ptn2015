@@ -27,6 +27,10 @@ module.exports = function (grunt) {
     grunt.initConfig({
         yeoman: yeomanConfig,
         watch: {
+			bower: {
+				files: ['bower.json'],
+				task: ['wiredep']
+			},
             emberTemplates: {
                 files: '<%= yeoman.app %>/templates/**/*.hbs',
                 tasks: ['emberTemplates']
@@ -126,6 +130,16 @@ module.exports = function (grunt) {
                 }
             }
         },
+
+		// Automatically inject Bower components into the HTML file
+		wiredep: {
+			app: {
+				ignorePath: /^\/|\.\.\//,
+				src: ['<%= yeoman.app %>/index.html'],
+				exclude: ['bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap.js']
+			}
+		},
+
         compass: {
             options: {
                 sassDir: '<%= yeoman.app %>/styles',
@@ -346,6 +360,7 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'clean:server',
+			'wiredep',
             'replace:app',
             'concurrent:server',
             'neuter:app',
