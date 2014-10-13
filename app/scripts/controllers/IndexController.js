@@ -1,14 +1,32 @@
 Ptn2015.IndexController = Ember.Controller.extend({
+	category: [
+		'Autopartage', 
+		'Appartement', 
+		'Tous type de biens',
+		'Place de parking',
+		'Service VTC',
+		'Salle à manger', 
+		'Bureaux, terrains, espace',
+		'Imprimente 3D',
+		'Crédit',
+		'Echange de devises',
+		'Services',
+		'Crowdfounding',
+		'Micro-cédit',
+		'Crowdsourcing',
+		'Mise en concurrence',
+		'Autres'
+	],
+
 	init: function(){
-		//this.set('model')
 	},
 
 	list: function(){
 		var l = [];
-		this.get('model.startup').forEach(function(e, i){
+		this.get('model').forEach(function(e, i){
 			l.push({
 				id: i,
-				text: e.name
+				text: e.get('name')
 			});
 		});
 		return l;
@@ -20,12 +38,12 @@ Ptn2015.IndexController = Ember.Controller.extend({
 	},
 
 	getStartup: function(name){
-		return this.get('model.startup').filterBy('name', name);
+		return this.get('model').filterBy('name', name);
 	},
 
 	getCategoryNumber: function(c){
 		var id;
-		this.get('model.category').forEach(function(e, i){
+		this.get('category').forEach(function(e, i){
 			if(e === c){
 				id = i;
 			}
@@ -39,7 +57,7 @@ Ptn2015.IndexController = Ember.Controller.extend({
 				this.set('selection', undefined);
 			}
 			var c = this.getCategoryNumber(filter);
-			var list = this.get('model.startup').filterBy('category', c);
+			var list = this.get('model').filterBy('category', c);
 			this.set('selection', list);
 		}
 	}

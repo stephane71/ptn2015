@@ -1,7 +1,11 @@
 <div class="col-md-3">
 	<div class="sidebar-nav">
 		<div class="list-group">
-			<a id="all" href="#" {{action "setFilter" "all"}} class="list-group-item">Toutes les Startup</a>
+			<a 	id="all" href="#" 
+				{{action "setFilter" "all"}} 
+				class="list-group-item">
+				Toutes les Startup
+			</a>
 		</div>
 		<h4>Catégories</h4>
 		{{view Ptn2015.CategoryMenuView}}
@@ -27,7 +31,7 @@
 			</tr>
 			{{/each}}
 		{{else}}
-		{{#each item in model.startup}}
+		{{#each item in model}}
 		<tr>
 			<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
 			<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
