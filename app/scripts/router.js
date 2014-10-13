@@ -1,3 +1,5 @@
 Ptn2015.Router.map(function () {
-  // Add your routes here
+	this.route('index', {path: '/'});
+	this.route('startups');
+	this.route('startup', {path: '/:startup_name'});
 });
