@@ -18,7 +18,7 @@ Ptn2015.Startup.FIXTURES = [{
 				id: 1,
 				name: 'Zilok',
 				url: 'http://fr.zilok.com',
-				img: 'http://altaide.typepad.com/.a/6a00d83451e4be69e20120a6376df3970c-120wi',
+				img: 'http://mag.livenet.fr/i/48789231a9ff877035e88c6706dd0541.jpg',
 				description: 'Location particulier et pro. Tout louer.',
 				category: 2
 			},
@@ -182,8 +182,8 @@ Ptn2015.Startup.FIXTURES = [{
 			{
 				id: 21,
 				name: 'Cookening',
-				url: 'data:image/jpeg;base64,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',
-				img: 'https://cookening-assets-eu.s3.amazonaws.com/assets/cookening-bbc8f2ec6ffb7c8fb538b94de26f62ef.svg',
+				url: 'https://www.cookening.com/fr',
+				img: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/p160x160/182018_451317294904111_557694859_n.jpg?oh=067bf05e0bbfaf51458d13ed5374318b&oe=54F8C584&__gda__=1420556016_7e0abc276b39b07765ca960533cbeb28',
 				description: "Des repas à la maison pour des rencontres improbables",
 				category: 5
 			},
@@ -239,7 +239,7 @@ Ptn2015.Startup.FIXTURES = [{
 				id: 28,
 				name: 'oDesk',
 				url: 'https://www.odesk.com/',
-				img: 'https://d1u2uhea8ugy8e.cloudfront.net/info/static/img/globals/odesk-logo.svg',
+				img: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfa1/v/t1.0-1/c12.12.155.155/306937_10150983368399334_357343891_n.jpg?oh=745c9665a12aafc6c02e0ef654bbd593&oe=54BDFA01&__gda__=1420997292_9d3e73ef72144d664446fbff103b34cb',
 				description: "",
 				category: 10
 			},
@@ -271,7 +271,7 @@ Ptn2015.Startup.FIXTURES = [{
 				id: 32,
 				name: 'WeDoGood',
 				url: 'https://www.wedogood.co',
-				img: 'https://www.wedogood.co/wp-content/themes/yproject/images/logo.png',
+				img: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-frc3/v/t1.0-1/c0.0.160.160/p160x160/1385198_518139994947434_251760386_n.png?oh=7698a29ef551fe350e444bb82622d64d&oe=54B3B50B&__gda__=1421899169_8ace368b73612baafaff21cc8e1d8143',
 				description: "Contribuons à une économie plus responsable en investissant sur des projets à fort impact sociétal.",
 				category: 11
 			},
@@ -295,7 +295,7 @@ Ptn2015.Startup.FIXTURES = [{
 				id: 35,
 				name: 'Clic and walk',
 				url: 'http://fr.clicandwalk.com',
-				img: 'http://91.68.209.9/bmi/www.clicandwalk.com//images/clicandwalk.png',
+				img: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p160x160/1381410_692923417403951_975814982_n.png?oh=63d24871046adaaaca62688c51199889&oe=54F7411B&__gda__=1420848563_4ddbfcc483348fc4e034d5d444f4b33a',
 				description: "Obtenez vos données marketing et commerciales en temps réel & photo",
 				category: 13
 			},
@@ -434,7 +434,7 @@ Ptn2015.Startup.FIXTURES = [{
 				id: 51,
 				name: 'Crème & Ciseaux',
 				url: 'http://www.creme-ciseaux.com',
-				img: 'http://www.creme-ciseaux.com/images/logo_white.png',
+				img: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-prn2/v/t1.0-1/p160x160/1236334_558909187490615_236505217_n.png?oh=e69a231d611fbdf8fc6672207bd072a2&oe=54BC5C5F&__gda__=1425363342_abfee965ef4725b3ea006682913ea9b0',
 				description: "Réservation de prestations de beauté et bien être",
 				category: 10,
 				model: 1
@@ -470,7 +470,7 @@ Ptn2015.Startup.FIXTURES = [{
 				id: 55,
 				name: 'SharyShary',
 				url: 'http://www.sharyshary.fr/',
-				img: 'http://91.68.209.12/bmi/www.sharyshary.fr/assets/image/logo.png',
+				img: 'http://www.sharyshary.fr/assets/image/logo.png',
 				description: "Sharyshary est le premier réseau social dédié au partage d’objets et de conseils entre amis.",
 				category: 2
 			},
