@@ -23,7 +23,7 @@
 			<th>Description</th>
 		</tr>
 		{{#each item in filteredStartup}}
-		<tr>
+		<tr {{action "startupSelection" item.id}}>
 			<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
 			<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
 			<td>{{item.description}}</td>

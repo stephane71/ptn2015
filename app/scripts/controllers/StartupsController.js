@@ -33,8 +33,8 @@ Ptn2015.StartupsController = Ember.Controller.extend({
 	}.property('model'),
 
 	onStartupSelection: function(selection){
-		var s = this.get('model').filterBy('name', selection);
-		console.log(s);
+		var s = this.get('model').filterBy('name', selection)[0];
+		this.transitionToRoute('startup', s.id);
 	},
 
 	getCategoryNumber: function(c){
@@ -66,6 +66,10 @@ Ptn2015.StartupsController = Ember.Controller.extend({
 				filter = null;
 			}
 			this.transitionToRoute('startups', {queryParams: {category: filter}});
+		},
+
+		startupSelection: function(startup_id){
+			this.transitionToRoute('startup', startup_id);
 		}
 	}
 });

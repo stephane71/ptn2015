@@ -1,0 +1,19 @@
+<button id="back_category" class="btn btn-primary"
+	{{action "backToList"}}>
+	<span class="glyphicon glyphicon-arrow-left"></span>
+	 Liste des startups
+</button>
+<table class='table table-bordered table-hover' style="margin-top:20px">
+	<tr>
+		<th></th>
+		<th>Startup</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td><img width="70px" height="70px" {{bind-attr src=img}}></td>
+		<td><a {{bind-attr href=url}}>{{name}}</a></td>
+		<td>{{description}}</td>
+	</tr>
+</table>
+
+
