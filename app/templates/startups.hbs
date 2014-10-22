@@ -1,0 +1,33 @@
+<div class="col-md-3">
+	<div class="sidebar-nav">
+		<div class="list-group">
+			<a 	id="all" href="#" 
+				{{action "setFilter"}} 
+				class="list-group-item">
+				Toutes les Startup
+			</a>
+		</div>
+		<h4>Catégories</h4>
+		{{view "category_menu"}}
+	</div>
+</div>
+<div class="col-md-9">
+	<input  id="startup-search" width="100%" type="text" 
+			class="form-control" style="margin-bottom:20px"
+			placeholder="Sélectionnez une startup">
+
+	<table class='table table-bordered table-hover'>
+		<tr>
+			<th></th>
+			<th>Startup</th>
+			<th>Description</th>
+		</tr>
+		{{#each item in filteredStartup}}
+		<tr>
+			<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
+			<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
+			<td>{{item.description}}</td>
+		</tr>
+		{{/each}}
+	</table>
+</div>
