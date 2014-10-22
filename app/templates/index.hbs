@@ -1,43 +1,12 @@
-<div class="col-md-3">
-	<div class="sidebar-nav">
-		<div class="list-group">
-			<a 	id="all" href="#" 
-				{{action "setFilter" "all"}} 
-				class="list-group-item">
-				Toutes les Startup
-			</a>
-		</div>
-		<h4>Catégories</h4>
-		{{view Ptn2015.CategoryMenuView}}
-	</div>
-</div>
-<div class="col-md-9">
-	<input  id="startup-search" width="100%" type="text" 
-			class="form-control" style="margin-bottom:20px"
-			placeholder="Sélectionnez une startup">
+<h2>Bienvenue!<br/>
+<small>Ce site est dédié aux membres du jury du <b>Prix des Technologies Numériques</b> 2015</small></h2>
 
-	<table class='table table-bordered table-hover'>
-		<tr>
-			<th></th>
-			<th>Startup</th>
-			<th>Description</th>
-		</tr>
-		{{#if selection}}
-			{{#each item in selection}}
-			<tr>
-				<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
-				<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
-				<td>{{item.description}}</td>
-			</tr>
-			{{/each}}
-		{{else}}
-		{{#each item in model}}
-		<tr>
-			<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
-			<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
-			<td>{{item.description}}</td>
-		</tr>
-		{{/each}}
-		{{/if}}
-	</table>
-</div>
+Vous trouverez la liste des startup que nous avons sélectionné pour l'édition 2015 sur le thême: "sharing economy"
+<br/>
+{{#link-to "startups" class="btn btn-primary"}}Voir la liste{{/link-to}}
+
+<br/><br/> 
+<br/><br/> 
+Plus d'information sur le Prix des Technologies Numériques:<br/>
+<a href="http://prixtechnologiesnumeriques.org/">Site officiel</a><br/>
+<a href="https://www.facebook.com/prixtechnologiesnumeriques">Page Facebook</a>
