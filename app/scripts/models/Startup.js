@@ -513,4 +513,158 @@ Ptn2015.Startup.FIXTURES = [{
 				img: 'http://www.bvp.com/sites/all/themes/BVP2011/templates/slir/w281/sites/default/files/fiverr_283_224.jpg',
 				description: "What do you need done? Find it on Fiverr Browse. Buy. Done.",
 				category: 1
+			}
+			{
+				id: 61 ,
+				name: 'Hello Merci',
+				url: 'https://www.hellomerci.com/fr',
+				img:'https://assets1.hellomerci.com/assets/logos/hellomerci-6577b3ea70b96b5b0cb6ea43ac4fcd22.svg', 
+				description: 'EMPRUNTEZ À DES GENS QUI VOUS VEULENT DU BIEN',
+				category: 11
+			}
+			{
+				id: 62 ,
+				name: 'Pretachanger',
+				url:'http://www.pretachanger.fr/' ,
+				img:'http://static.pretachanger.fr/images/front/logo.png?v=382', 
+				description:'ÉCHANGE & VENDS TES VÊTEMENTS, CHAUSSURES ET ACCESSOIRES DE MODE' ,
+				category: 2
+			}
+			{
+				id: 63,
+				name:'alittleMarket' ,
+				url: 'http://www.alittlemarket.com/',
+				img:'http://assets_orig.alittlemarket.com/image/header/logo.svg', 
+				description: 'Sur A Little Market, retrouvez des créations 100% fait-main et achetez directement au créateur !',
+				category: 12
+			}
+			{
+				id: 64,
+				name: 'Chambre à louer.com',
+				url: 'http://fr.chambrealouer.com/location',
+				img:'http://fr.chambrealouer.com/picture/logo.png', 
+				description: 'Chambrealouer.com propose à des Propriétaires d’un logement alternatif de publier gratuitement des annonces de location, et d’être contactés par des Locataires à la recherche de convivialité et de logements pas chers.' ,
+				category: 1
+			}
+			{
+				id:65 ,
+				name:'citygo' ,
+				url: 'http://citygoo.fr/',
+				img:'http://citygoo.fr/skin/frontend/hithik/default/images/logo.png', 
+				description: "FINI LES GALÈRES DE TRANSPORT !L'APPLICATION POUR VOS TRAJETS URBAINS EST LÀ",
+				category: 0
+			}
+			{
+				id:66 ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			}
+			{
+				id: ,
+				name: ,
+				url: ,
+				img:, 
+				description: ,
+				category: 1
+			
+		
 		}];
