@@ -1,6 +1,10 @@
 Ptn2015.CategoryMenuView = Ember.View.extend({
 	templateName: 'category_menu',
 
+	didInsertElement: function(){
+		$('#all').addClass('active');
+	},
+
 	click: function(selection){
 		if($(selection.target).parent().attr('id') === 'all'){
 			$('#all').addClass('active');
