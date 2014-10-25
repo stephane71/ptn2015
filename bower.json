@@ -7,7 +7,8 @@
     "ember-data": "~1.0.0-beta.8",
     "bootstrap-sass-official": "3.1.1",
     "select2": "~3.5.1",
-    "select2-bootstrap3-css": "~1.4.1"
+    "select2-bootstrap3-css": "~1.4.1",
+    "bootstrap-material-design": "~0.1.2"
   },
   "devDependencies": {
     "ember-mocha-adapter": "0.2.1"
