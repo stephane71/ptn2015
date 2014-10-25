@@ -561,15 +561,15 @@ Ptn2015.Startup.FIXTURES = [{
 				img: 'http://www.placedelaloc.com/sites/default/files/logo.jpg', 
 				description: "Louez un objet, une voiture ... entre particuliers près de chez vous, en toute sécurité",
 				category: 0
-			},
-   /*         {*/
-				//id: ,
-				//name: ,
-				//url: ,
+			}/*,*/
+			//{
+				//id: 67,
+				//name: 'Alterre',
+				//url: 'https://www.alterre.org/',
 				//img:, 
 				//description: ,
 				//category: 1
-			//},
+			/*},*/
 			//{
 				//id: ,
 				//name: ,
