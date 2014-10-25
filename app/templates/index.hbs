@@ -1,28 +1,18 @@
-<div id="fb-root"></div>
-<script>
-	(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=1477818409128838&version=v2.0";
-		fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-</script>
-
 <div class="jumbotron">
 	<h1>Bienvenue!</h1>
-	<p>Ce site est dédié aux membres du jury du <b>Prix des Technologies Numériques</b> 2015.<br/>
-	Vous trouverez la liste des startup que nous avons sélectionné pour l'édition 2015 sur le thême:<br/> "sharing economy"</p>
+	<p>
+	Ce site est dédié aux membres du jury du <b>Prix des Technologies Numériques</b> 2015.<br>
+	Vous trouverez la liste des startup que nous avons sélectionné pour l'édition 2015 sur le thême:<br> "sharing economy"
+	</p>
 	<p>{{#link-to "startups" class="btn btn-primary btn-lg"}}Voir la liste{{/link-to}}</p>
 </div>
 
-<br/><br/> 
-<br/><br/>
+<br><br> 
+<br><br>
 
 <div class="well col-lg-12">
 	<img class="col-lg-4"
-		 src="http://prixtechnologiesnumeriques.org/wp-content/uploads/logo-ptn.png">
-	<img>
+		 src="http://prixtechnologiesnumeriques.org/wp-content/uploads/logo-ptn.png"/>
 	<div class="col-lg-8">
 		<div class="row">
 			<blockquote>
@@ -31,10 +21,22 @@
 			</p>
 			<a href="http://prixtechnologiesnumeriques.org/" target="_blank">Site officiel</a>
 			<a href="https://www.facebook.com/prixtechnologiesnumeriques" target="_blank">
-				<img src="images/FB-f-Logo__blue_29.png"></img>
+				<img src="images/FB-f-Logo__blue_29.png"/>
 			</a>
-		</blockquote>
+			</blockquote>
+		</div>
 		<div class="row">
+			<div id="fb-root"></div>
+			<script>
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=1477818409128838&version=v2.0";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+			</script>
+
 			<div class="fb-like pull-right"
 				 data-href="https://www.facebook.com/prixtechnologiesnumeriques"
 				 data-layout="button_count" data-action="like"
