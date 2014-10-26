@@ -2,7 +2,9 @@
 	<ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
     	<li id="all" {{action "setFilter"}} ><a href="#">Toutes les Startup</a></li>
 	</ul>
-
+	<ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+    	<li id="star" {{action "setFilter" "star"}} ><a href="#">Notre sélection</a></li>
+	</ul>
 	<h4>Catégories</h4>
 	<ul  id="category_menu" class="nav nav-pills nav-stacked" style="max-width: 300px;">
 		{{#each item in category_list}}

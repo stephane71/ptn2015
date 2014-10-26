@@ -50,8 +50,11 @@ Ptn2015.StartupsController = Ember.Controller.extend({
 	filteredStartup: function() {
 		var category = this.get('category');
 		var startup = this.get('model');
-	  
-		if (category !== null) {
+		
+		if(category === 'star'){
+			return startup.filterBy('star', 1);
+		}	
+		else if (category !== null) {
 			var c = this.getCategoryNumber(category);
 			return startup.filterBy('category', c);
 		}

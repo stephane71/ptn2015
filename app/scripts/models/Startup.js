@@ -3,15 +3,50 @@ Ptn2015.Startup = DS.Model.extend({
 	url: DS.attr('string'),
 	img: DS.attr('string'),
 	description: DS.attr('string'),
-	category: DS.attr()
+	category: DS.attr(),
+	team: DS.attr(),
+	facebook:DS.attr(),
+	description_long: DS.attr(),
+	model_eco: DS.attr(),
+	choice: DS.attr(),
+	star: DS.attr(),
 });
 
 Ptn2015.Startup.FIXTURES = [{
 				id: 0,
 				name: 'Livementor',
 				url: 'https://www.livementor.com',
-				img: 'http://38.media.tumblr.com/avatar_be95c27d745a_128.png',
+				img: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xap1/v/t1.0-1/p160x160/10647164_556622361108410_3003220382169356197_n.png?oh=091cb46ed27e92abfcc8708a5695f894&oe=54F32739&__gda__=1424046908_84a70a4556a1b5134a028f192c9c9cd2',
+				facebook: 'https://www.facebook.com/LiveMentorFans',
 				description: 'Cours particulier par Internet',
+				description_long: "LiveMentor est un site de cours particuliers en ligne. Cette solution permet aux élèves de prendre des cours depuis n'importe où dispensés par des mentors. Les mentors sont soit des enseignants certifiés, soit des étudiants de Grandes Écoles ou d'Universités.",
+				model_eco: "Commission de 10 à 20% (selon l'ancienneté du mentor) sur le prix d'un cours particulier.",
+				choice: "LiveMentor se différentie des autres solutions de cours particuliers sur deux point: \n les cours sont dispensés uniquement en ligne et la cible principale pour les mentors est les étudiants. Grâce à ses atouts, LiveMentor revendique des prix 40% moins cher que les agences de soutien scolaire. Il y a aujourd'hui plus de 1000 mentors sur la plateforme.",
+				team: [{
+					name: "Alexandre Dana",
+					linkedin: "https://www.linkedin.com/in/alexandredana",
+					photo: "https://media.licdn.com/mpr/mpr/shrink_200_200/p/2/005/029/29f/0bfdbca.jpg",
+					description: "Première entreprise: Top Prepas juin 2010 -  mars 2011 (10 mois). Ouvrage: Guide studyrama de survie en Prépa HEC",
+					school: "ESCP Europe",
+					job: "Co-fondateur & Designer" 
+				},
+				{
+					name: "Charles Lefebvre du Prey",
+					linkedin: "https://www.linkedin.com/profile/view?id=174888288&authType=name&authToken=Xx5S&trk=Skyline_click_NBM&sl=NBM%3B116367148%3A1414328958904%3B0%3B102007373%3B",
+					photo: "https://media.licdn.com/mpr/mpr/shrink_200_200/p/1/005/03a/3e6/36d47e8.jpg",
+					description: "",
+					school: "ESCP Europe",
+					job: "Co-fondateur"
+				},
+				{
+					name: "Grégoire Clermont",
+					linkedin: "https://www.linkedin.com/profile/view?id=93564136&authType=name&authToken=iJgQ&trk=Skyline_click_NBM&sl=NBM%3B116367148%3A1414328958904%3B1%3B174888288%3B",
+					photo: "https://media.licdn.com/mpr/mpr/shrink_200_200/p/5/000/25c/2ad/26207e2.jpg",
+					description: "",
+					school: "EPITECH",
+					job: "Technical Lead"
+				}],
+				star: 1,
 				category: 10
 			},
 			{
@@ -28,6 +63,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://www.parkadom.com',
 				img: 'http://www.parkadom.com/images/frontend/logo.jpg',
 				description: 'Partager votre parking\nParkadom est la première communauté de partage de parking entre particuliers en France.',
+				star: 1,
 				category: 3
 			},
 			{
@@ -112,6 +148,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://www.carsonar.com',
 				img: 'http://shareannuaire.com/wp-content/uploads/2014/07/carsonar-230x230.png',
 				description: "26 000 véhicules de professionnels et particuliers 26 opérateurs d'autopartage\nComparateur de location de voiture entre particuliers",
+				star: 1,
 				category: 0
 			},
 			{
@@ -120,6 +157,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'https://www.drivy.com/',
 				img: 'https://lh5.googleusercontent.com/-aHkAvwBcDs0/AAAAAAAAAAI/AAAAAAAAAS8/Fb_j2Ywac18/photo.jpg?sz=48',
 				description: 'Service de location de voiture entre particulier',
+				star: 1,
 				category: 0
 			},
 			{
@@ -136,6 +174,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'https://www.tripndrive.com/fr',
 				img: 'https://lh6.googleusercontent.com/-HKHX2Mq33Yg/AAAAAAAAAAI/AAAAAAAAAQg/UQHx8THEB3Q/photo.jpg?sz=48',
 				description: "Autopartage pour les voyageurs à l'aéroport et à la gare",
+				star: 1,
 				category: 0
 			},
 			{
@@ -161,6 +200,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://www.guesttoguest.com',
 				img: 'https://lh4.googleusercontent.com/-wVTwuTVwkyY/AAAAAAAAAAI/AAAAAAAAAIs/Z3yEy630Yos/photo.jpg?sz=48',
 				description: "GuestToGuest est le site internet qui vous permet d’échanger votre maison ou votre appartement pour les vacances.",
+				star: 1,
 				category: 1
 			},
 			{
@@ -169,6 +209,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://alpha.bnbsitter.com',
 				img: 'http://www.usine-digitale.fr/mediatheque/7/2/7/000170727_logoStartup.jpg',
 				description: "Services d’accueil et ménage professionnel en moins de deux minutes.",
+				star: 1,
 				category: 1
 			},
 			{
@@ -177,6 +218,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://fr.bedycasa.com',
 				img: 'http://cdn.bedycasa.com/bundles/bedycasacore/images/logo-bedycasa-flat-209x59.png',
 				description: "Chambres à louer chez l'habitant !",
+				star: 1,
 				category: 1
 			},
 			{
@@ -201,6 +243,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://www.sculpteo.com/fr/',
 				img: "data:image/jpeg;base64,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",
 				description: "Acheter, vendre et imprimer vos idées en 3D, sous forme d’objets avec Sculpteo.",
+				star: 1,
 				category: 7
 			},
 			{
@@ -209,6 +252,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://www.pret-dunion.fr/',
 				img: "http://www.pret-dunion.fr/static/img/fr/logo_0.gif",
 				description: "LEADER DU CRÉDIT « ENTRE PARTICULIERS ».",
+				star: 1,
 				category: 8
 			},
 			{
@@ -297,6 +341,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://fr.clicandwalk.com',
 				img: 'https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/p160x160/1381410_692923417403951_975814982_n.png?oh=63d24871046adaaaca62688c51199889&oe=54F7411B&__gda__=1420848563_4ddbfcc483348fc4e034d5d444f4b33a',
 				description: "Obtenez vos données marketing et commerciales en temps réel & photo",
+				star: 1,
 				category: 13
 			},
 			{
@@ -321,6 +366,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://www.creads.fr',
 				img: 'http://www.creads.fr/blog/wp-content/uploads/2012/02/picto-creads.jpg',
 				description: "L'AGENCE PARTICIPATIVE - Nous organisons la créativité de milliers de créatifs pour vos projets de communication",
+				star: 1,
 				category: 14
 			},
 			{
@@ -427,6 +473,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'http://www.laruchequiditoui.fr',
 				img: 'http://blog.kisskissbankbank.com/wp-content/uploads/2012/10/La-Ruche-qui-dit-Oui.jpeg',
 				description: "La Ruche qui dit Oui ! permet de vous réunir pour acheter directement aux producteurs de votre région.",
+				star: 1,
 				category: 11,
 				model: 1
 			},
@@ -480,6 +527,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'https://www.bird-office.com/',
 				img: 'https://www.bird-office.com/img/logo-bird-office.png',
 				description: "Réservez votre salle de réunion, formation,séminaire, conférence...",
+				star: 1,
 				category: 6
 			},
 			{
@@ -520,6 +568,7 @@ Ptn2015.Startup.FIXTURES = [{
 				url: 'https://www.hellomerci.com/fr',
 				img:'https://assets1.hellomerci.com/assets/logos/hellomerci-6577b3ea70b96b5b0cb6ea43ac4fcd22.svg', 
 				description: 'EMPRUNTEZ À DES GENS QUI VOUS VEULENT DU BIEN',
+				star: 1,
 				category: 11
 			},
 			{
