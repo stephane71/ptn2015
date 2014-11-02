@@ -2,11 +2,18 @@ Ptn2015.CategoryMenuView = Ember.View.extend({
 	templateName: 'category_menu',
 
 	didInsertElement: function(){
-		$('#all').addClass('active');
+		this.click(this.get('controller.category'))
 	},
 
 	click: function(selection){
-		var s = $(selection.target).parent().attr('id');
+		var s, targ;
+		if(typeof selection === 'string'){
+			s = selection;
+			targ = s;
+		} else{
+			s = $(selection.target).parent().attr('id');
+			targ = selection.target.text;
+		}
 		if(s === 'all'){
 			$('#all').addClass('active');
 			$('#star').removeClass('active');
@@ -26,7 +33,7 @@ Ptn2015.CategoryMenuView = Ember.View.extend({
 			$('#star').removeClass('active');
 			$("#category_menu a").each(function(i, e){
 				$(e).parent().removeClass('active');
-				if(e.text === selection.target.text){
+				if(e.text === targ){
 					$(e).parent().addClass('active');
 				}
 			});
