@@ -13,10 +13,10 @@
 			<th>Description</th>
 		</tr>
 		{{#each item in filteredStartup}}
-		<tr {{action "startupSelection" item.id}}>
-			<td><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
-			<td><a {{bind-attr href=item.url}}>{{item.name}}</a></td>
-			<td>{{item.description}}</td>
+		<tr>
+			<td {{action "startupSelection" item.id}}><img width="70px" height="70px" {{bind-attr src=item.img}}></td>
+			<td class="text-center"><a {{bind-attr href=item.url}} target="_bank">{{item.name}}</a></td>
+			<td {{action "startupSelection" item.id}}>{{item.description}}</td>
 		</tr>
 		{{/each}}
 	</table>
