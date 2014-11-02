@@ -3,6 +3,17 @@ Ptn2015.StartupsController = Ember.Controller.extend({
 	category: null,
 
 	category_list: [
+		"Mobilité",
+		"Habitat et voyage",
+		"Location d'espaces",
+		"Finance participative",
+		"Crowdsourcing",
+		"Echange et Troc",
+		"Support à la Sharing Economy",
+		"Autre"
+	],
+
+	_category_list: [
 		'Autopartage', 
 		'Appartement', 
 		'Tous type de biens',
